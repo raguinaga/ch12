@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.geometry.Insets;
 
 public class ImageBoxes extends Application {
 
@@ -36,7 +37,7 @@ public class ImageBoxes extends Application {
 
         // Put all images in a HBOX
         HBox hbox = new HBox(10,moonView, shipView, sunsetView);
-
+        hbox.setPadding(new Insets(10));
         // Create the scene with the hbox as the root node
         Scene scene = new Scene(hbox);
 
